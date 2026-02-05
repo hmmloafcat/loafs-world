@@ -1,0 +1,39 @@
+body {
+    font-family: "JetBrains Mono", monospace;
+    color: #ffffff;
+    background-color: #121212;
+}
+
+.hi::before {
+    content: "echo ";
+    color: hwb(32 26% 0%);
+}
+
+.hi::after {
+    content: "_";
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+a {
+    color: hwb(268 24% 5%);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hwb(60 19% 81%);
+    margin: 1em 0;
+}
